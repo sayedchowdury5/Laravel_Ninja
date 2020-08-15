@@ -1,0 +1,35 @@
+//install laravel packages from composer
+composer global require laravel/installer
+
+//create new project
+laravel new <project name>
+
+//view the website from terminal
+php artisan serve
+
+//display dynamic view
+{{ <variable name> }} 
+
+//create new controller from terminal
+php artisan serve make:controller <controller name>
+
+******************validation for int or string**************
+
+filter_var($request->input('public'), FILTER_VALIDATE_INT) !== false
+
+because:
+
+is_int() is true for 12 but isn't for "12"
+is_numerric() is true for 12.12312323
+
+//alternatives
+$isInteger = (is_int($request->input('public'))) ? true : false;
+
+//or
+$number = $request->input('public');
+
+if (is_int($number)) {
+   dd('number is an integer');
+} else {
+   dd('number is not an integer');
+}

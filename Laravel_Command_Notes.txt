@@ -16,6 +16,9 @@ php artisan serve
 //create new controller from terminal
 php artisan serve make:controller <controller name>
 
+//create new model from terminal
+php artisan make:model <model name>
+
 //create database and tables from terminal
 create database <database name>
 php artisan make:migration create_users_table [Note: users is the table name]
@@ -35,6 +38,25 @@ php artisan migrate
 //clear history cache
 php artisan config:cache
 php artisan config:clear
+
+//install nodejs package manager into laravel project
+npm install
+
+//install ui and auth packages from terminal
+composer require laravel/ui
+php artisan ui vue --auth
+npm install
+npm run dev
+
+//include sass file to css file
+npm run dev [Note: include first time]
+npm run watch [Note: include further]
+
+//check route list
+php artisan route:list
+
+//create model+controler+migration together
+php artisan make:model kabab -mc
 
 ******************validation for int or string**************
 

@@ -13,6 +13,12 @@
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
+    <ul>
+          <li><a href="{{ route('/pizzas') }}">All pizza</a></li>
+          <li><a href="{{ route('/pizzas') }}">All pizza</a></li>
+          <li><a href="{{ route('/pizzas') }}">All pizza</a></li>
+          </ul>
+
     @yield('content')
 
     <footer>

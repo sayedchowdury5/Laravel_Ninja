@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/welcome');
 });
 
-Route::get('/pizzas', 'PizzaController@index');
-Route::get('/pizzas/{id}', 'PizzaController@show');
+// Route::get('/pizzas', 'PizzaController@index');
+Route::get('all_Pizza_list', 'PizzaController@ShowAll')->name('/pizzas');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

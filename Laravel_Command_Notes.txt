@@ -4,6 +4,9 @@ composer global require laravel/installer
 //create new project
 laravel new <project name>
 
+//open the list of php operation
+php artisan
+
 //view the website from terminal
 php artisan serve
 
@@ -12,6 +15,26 @@ php artisan serve
 
 //create new controller from terminal
 php artisan serve make:controller <controller name>
+
+//create database and tables from terminal
+create database <database name>
+php artisan make:migration create_users_table [Note: users is the table name]
+php artisan make:migration create_users_table --create=users
+
+//migration option
+php artisan migrate:fresh
+php artisan migrate:install
+php artisan migrate:refresh
+php artisan migrate:reset
+php artisan migrate:rollback
+php artisan migrate:status
+
+//migrate all tables to database
+php artisan migrate
+
+//clear history cache
+php artisan config:cache
+php artisan config:clear
 
 ******************validation for int or string**************
 

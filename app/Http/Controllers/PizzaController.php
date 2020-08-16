@@ -17,7 +17,6 @@ class PizzaController extends Controller
         return view('Pizzas', [
             'pizzas' => $pizzas,
             'name' => request('name'),
-            'age' => request('age'),
             'age' => request('age')
             ]);
     
